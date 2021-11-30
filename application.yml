@@ -1,4 +1,4 @@
 eureka:
   client:
     service-url:
-      defaultZone: https://eureka-iahrari.herokuapp.com/eureka
+      defaultZone: https://iahrari:pass@eureka-iahrari.herokuapp.com/eureka
