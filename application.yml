@@ -3,6 +3,6 @@ eureka:
     service-url:
       defaultZone: https://iahrari:pass@eureka-iahrari.herokuapp.com/eureka
   instance:
-    statusPageUrl: https://${eureka.hostname}/info
-    healthCheckUrl: https://${eureka.hostname}/health
+    statusPageUrl: https://${eureka.hostname}/${management.endpoints.web.base-path}/info
+    healthCheckUrl: https://${eureka.hostname}/${management.endpoints.web.base-path}/health
     homePageUrl: https://${eureka.hostname}/
