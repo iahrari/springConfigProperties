@@ -7,6 +7,16 @@ eureka:
     healthCheckUrl: https://${eureka.hostname}${management.endpoints.web.base-path}/health
     homePageUrl: https://${eureka.hostname}/
     
+spring:
+  cloud:
+    discovery:
+      enabled: true 
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+    
 management:
   endpoints:
     web:
